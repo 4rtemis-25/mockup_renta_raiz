@@ -16,10 +16,10 @@ body {
 .navbar-expand-lg {
     background-color: var(--bg-primary);
     padding: 10px;
-
 }
 
-.navbar-brand, .navbar-item,
+.navbar-brand,
+.navbar-item,
 .nav-link,
 .dropdown-menu {
     color: whitesmoke;
@@ -35,6 +35,40 @@ body {
 .nav-link:hover {
     background-color: whitesmoke;
     color: var(--bg-primary);
+}
+
+#sidebar {
+    width: 200px;
+    background-color: var(--bg-primary);
+    color: whitesmoke
+}
+
+#menu-sidebar {
+    color: whitesmoke;
+    background-color: var(--bg-primary);
+    transition: background-color 0.4s ease, color 0.2s ease;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+}
+
+#menu-sidebar:hover {
+    color: var(--bg-primary);
+    background-color: whitesmoke;
+    border-bottom-color: var(--bg-primary);
+}
+
+.btn-user {
+    background-color: azure;
+    color: var(--bg-primary);
+    transition: background-color 0.5s ease, color 0.2s ease;
+    border: none;
+    border-radius: 70px;
+}
+
+.btn-user:hover {
+    background-color: var(--bg-primary);
+    color: whitesmoke;
 }
 
 .btn-primary {
@@ -60,7 +94,8 @@ body {
     color: whitesmoke;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     border-color: var(--bg-secondary);
     box-shadow: 0 0 0 0.15rem rgba(224, 179, 74, 0.629);
 }
