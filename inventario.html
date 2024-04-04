@@ -47,8 +47,7 @@
                     Inmuebles</li>
                 <li class="list-group-item" id="menu-sidebar" onclick="window.location.href='index.html';">Crear
                     Inmueble</li>
-                <li class="list-group-item" id="menu-sidebar" onclick="window.location.href='inventario.html';">Realizar
-                    Inventario</li>
+
             </ul>
         </div>
     </div>
@@ -73,7 +72,7 @@
                     </div>
                     <div class="col-md-6">
                         <h5><strong>Ciudad:</strong> Medellin</h5>
-                        <h5><strong>Departamento: </strong> Antioqui</h5>
+                        <h5><strong>Departamento: </strong> Antioquia</h5>
                     </div>
                 </div>
 
@@ -84,7 +83,7 @@
                     </div>
 
                     <div class="col-md-8 text-end">
-                        <button class="btn btn-primary btn-sm">Agregar Ambiente</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalamb">Agregar Ambiente</button>
                     </div>
                     <div class="accordion mb-2" id="accordionExample">
                         <div class="accordion-item">
@@ -114,7 +113,7 @@
                                         </table>
 
                                         <div class="col-md-12 text-end mt-2">
-                                            <button class="btn btn-primary btn-sm">Agregar Objeto</button>
+                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalobj"> Agregar Objeto</button>
                                         </div>
                                     </div>
                                 </div>
@@ -182,7 +181,7 @@
                                         </table>
 
                                         <div class="col-md-12 text-end mt-2">
-                                            <button class="btn btn-primary btn-sm">Agregar Objeto</button>
+                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalobj">Agregar Objeto</button>
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +197,7 @@
                     </div>
 
                     <div class="col-md-8 text-end">
-                        <button class="btn btn-primary btn-sm">Agregar Ambiente</button>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalamb"> Agregar Ambiente</button>
                     </div>
                     <div class="accordion mb-2" id="accordionExample">
                         <div class="accordion-item">
@@ -228,7 +227,7 @@
                                         </table>
 
                                         <div class="col-md-12 text-end mt-2">
-                                            <button class="btn btn-primary btn-sm">Agregar Objeto</button>
+                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalobj">Agregar Objeto</button>
                                         </div>
                                     </div>
                                 </div>
@@ -261,7 +260,7 @@
                                         </table>
 
                                         <div class="col-md-12 text-end mt-2">
-                                            <button class="btn btn-primary btn-sm">Agregar Objeto</button>
+                                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalobj">Agregar Objeto</button>
                                         </div>
                                     </div>
                                 </div>
@@ -309,6 +308,59 @@
     </div>
 
 
+
+    <div class="modal fade" id="exampleModalamb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar Ambiente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="">Ambiente</label>
+                        <select name="" id="" class="form-select">
+                            <option value="">Habitacion</option>
+                            <option value="">Cocina</option>
+                            <option value="">Baño</option>
+                            <option value="">Estudio</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Crear Ambiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModalobj" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content ">
+            <div class="modal-header">
+              <h5 class="modal-title">Agregar Objeto Al Ambiente</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <label for="">Objeto</label>
+                <select name="" id="" class="form-select">
+                    <option value="">Cama</option>
+                    <option value="">Ventana</option>
+                    <option value="">Baño</option>
+                    <option value="">Mesa</option>
+                </select>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Crear Objeto</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <!-- SCRIPTS -->
