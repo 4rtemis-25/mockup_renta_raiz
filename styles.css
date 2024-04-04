@@ -1,0 +1,81 @@
+:root {
+    --bg-primary: #060f29;
+    --bg-secondary: rgb(205, 173, 96);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('Fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: whitesmoke;
+}
+
+.navbar-expand-lg {
+    background-color: var(--bg-primary);
+    padding: 10px;
+
+}
+
+.navbar-brand, .navbar-item,
+.nav-link,
+.dropdown-menu {
+    color: whitesmoke;
+}
+
+.nav-link {
+    margin-right: 25px;
+    transition: background-color 0.5s ease, color 0.2s ease;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav-link:hover {
+    background-color: whitesmoke;
+    color: var(--bg-primary);
+}
+
+.btn-primary {
+    background-color: var(--bg-secondary);
+    color: whitesmoke;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: whitesmoke;
+    color: var(--bg-secondary);
+}
+
+.btn-secondary {
+    background-color: var(--bg-secondary);
+    color: whitesmoke;
+    border: none;
+    transition: background-color 0.5s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-primary);
+    color: whitesmoke;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--bg-secondary);
+    box-shadow: 0 0 0 0.15rem rgba(224, 179, 74, 0.629);
+}
+
+/* STYLES SCROLL */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b7b7b7c5;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
