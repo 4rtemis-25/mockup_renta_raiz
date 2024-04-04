@@ -58,6 +58,11 @@ body {
     border-bottom-color: var(--bg-primary);
 }
 
+#cardInmueble {
+    background-color: var(--bg-primary);
+    color: whitesmoke;
+}
+
 .btn-user {
     background-color: azure;
     color: var(--bg-primary);
@@ -75,6 +80,7 @@ body {
     background-color: var(--bg-secondary);
     color: whitesmoke;
     border: none;
+    transition: background-color 0.5s ease, color 0.2s ease;
 }
 
 .btn-primary:hover {
