@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factura</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20vw;
+      height: 20vw;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .logo div {
+      width: 50px;
+      height: 50px;
+      background-color: #c5c8cb;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+
+    .logo-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .logo-text p {
+      margin: 0;
+      text-align: left;
+    }
+
+    .invoice-info {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .invoice-info p {
+      margin: 2px 0;
+    }
+
+    hr {
+      color: #aaa;
+      box-shadow: none;
+      border-top: none;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 20px 0 5px;
+    }
+
+    .message {
+      color: #444;
+    }
+
+    .details-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+
+    .details-section div {
+      width: 100%;
+    }
+
+    .details-section div h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .details-section div p,
+    .details-section div table {
+      font-size: 14px;
+      margin: 4px 0;
+      color: #444;
+    }
+
+    .details-section div p.light {
+      color: #aaa;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table thead th {
+      text-align: left;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    table tbody td {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    .total-section {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .total-section p {
+      margin: 5px 0;
+    }
+
+    .total-section .total {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Imagen de fondo centrada -->
+    <img src="assets/image.png" class="background-image" alt="Fondo">
+
+    <div class="header">
+      <div class="logo-text">
+        <p>Renta Raiz SAS</p>
+        <p>Medellin, Antioquia</p>
+      </div>
+      <div class="invoice-info">
+        <p><!-- Factura# --></p>
+        <p><!-- Fecha de emisión --></p>
+        <p><!-- dd/mm/aaaa --></p>
+      </div>
+    </div>
+
+    <div class="title"><!-- Nombre del Inmueble --></div>
+    <div class="message"><!-- Datos del Inmueble --></div>
+
+    <hr />
+
+    <div class="details-section">
+      <div>
+        <h3>FACTURAR A</h3>
+        <table>
+          <!-- TABLA ARRENDATARIO -->
+        </table>
+      </div>
+      <hr />
+      <div>
+        <table>
+          <!-- TABLA PROPIETARIOS -->
+        </table>
+      </div>
+    </div>
+
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>DESCRIPCION</th>
+          <th>CANON</th>
+          <th>VALOR TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- TABLA -->
+      </tbody>
+    </table>
+
+    <div class="total-section">
+      <p><!-- Subtotal --></p>
+      <p><!-- Impuesto --></p>
+      <p class="total"><!-- Total a pagar --></p>
+    </div>
+  </div>
+</body>
+
+</html>
